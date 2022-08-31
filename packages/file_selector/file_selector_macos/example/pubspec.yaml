@@ -15,6 +15,7 @@ dependencies:
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
     path: ..
+  dio: ^4.0.6
   file_selector_platform_interface: ^2.0.0
   flutter:
     sdk: flutter

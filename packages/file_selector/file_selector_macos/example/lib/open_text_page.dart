@@ -14,7 +14,7 @@ class OpenTextPage extends StatelessWidget {
   Future<void> _openTextFile(BuildContext context) async {
     final XTypeGroup typeGroup = XTypeGroup(
       label: 'text',
-      extensions: <String>['txt', 'json'],
+      extensions: <String>['txt', 'json', 'dart'],
     );
     final XFile? file = await FileSelectorPlatform.instance
         .openFile(acceptedTypeGroups: <XTypeGroup>[typeGroup]);
@@ -49,7 +49,7 @@ class OpenTextPage extends StatelessWidget {
                 // ignore: deprecated_member_use
                 onPrimary: Colors.white,
               ),
-              child: const Text('Press to open a text file (json, txt)'),
+              child: const Text('Press to open a text file (json, txt, dart)'),
               onPressed: () => _openTextFile(context),
             ),
           ],

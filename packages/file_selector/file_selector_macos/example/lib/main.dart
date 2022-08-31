@@ -7,6 +7,7 @@ import 'package:example/home_page.dart';
 import 'package:example/open_image_page.dart';
 import 'package:example/open_multiple_images_page.dart';
 import 'package:example/open_text_page.dart';
+import 'package:example/save_image_page.dart';
 import 'package:example/save_text_page.dart';
 import 'package:flutter/material.dart';
 
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
             const OpenMultipleImagesPage(),
         '/open/text': (BuildContext context) => const OpenTextPage(),
         '/save/text': (BuildContext context) => SaveTextPage(),
+        '/save/image': (BuildContext context) => SaveImagePage(),
         '/directory': (BuildContext context) => const GetDirectoryPage(),
       },
     );
